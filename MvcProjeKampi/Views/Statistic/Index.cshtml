@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h2>İstatistikler</h2>
+<br />
+<div class="col-md-2">
+    <div class="card text-white bg-primary mb-4 " style="max-width: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+            <br />
+            <h5 class="info-box-number"> @ViewBag.qCategoryCount</h5>
+        </div>
+    </div>
+</div>
+<div class="col-md-2">
+    <div class="card text-white bg-secondary mb-4 " style="max-width: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">Yazılım Kategorisi Başlık Sayısı</h5>
+            <br />
+            <h5 class="info-box-number"> @ViewBag.qSoftwareCategoryTitleCount</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-2">
+    <div class="card text-white bg-fuchsia mb-4 " style="max-width: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">A Harfi Geçen Yazar Sayısı</h5>
+            <br />
+            <h5 class="info-box-number"> @ViewBag.qAwriterCount</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-2">
+    <div class="card text-white bg-gradient-orange mb-4 " style="max-width: 20rem;">
+        <div class="card-body">
+            <h5 class="card-title">En fazla başlığa sahip kategori adı</h5>
+            <br />
+            <h5 class="info-box-number"> @ViewBag.qHasMoreTitle</h5>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-2">
+    <div class="card text-white bg-indigo mb-4 " style="max-width: 20rem;">
+       
+        <div class="card-body">
+            <h5 class="card-title">Kategori Durumları Arasındaki Fark</h5>
+            <br />
+            <h5 class="info-box-number"> @ViewBag.variationTrueBtwFalse</h5>
+        </div>
+    </div>
+</div>
